@@ -49,7 +49,7 @@ class MARCSerializer < ASpaceExport::Serializer
           xml.controlfield(:tag => cf[:tag]) { xml.text cf[:text] }
         end
 
-        xml.controlfield(:tag => '`008`') {
+        xml.controlfield(:tag => '008') {
          xml.text marc.controlfield_string
         }
 
